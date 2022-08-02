@@ -1,5 +1,6 @@
 server:
   port: 8004
+
 spring:
   application:
     name: eureka-security-server
@@ -7,6 +8,7 @@ spring:
     user:
       name: snowman
       password: 123456
+
 eureka:
   instance:
     hostname: localhost
