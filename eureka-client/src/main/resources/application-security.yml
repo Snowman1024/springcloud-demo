@@ -10,4 +10,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://snowman:123456@localhost:8004/eureka/
+      defaultZone: http://shen:123456@localhost:8004/eureka/

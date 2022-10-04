@@ -10,7 +10,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.snowman.cloud</groupId>
+	<groupId>com.shen.cloud</groupId>
 	<artifactId>config-security-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>config-security-server</name>

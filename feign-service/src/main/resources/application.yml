@@ -18,7 +18,7 @@ feign:
 
 logging:
   level:
-    com.snowman.cloud.service.UserService: debug
+    com.shen.cloud.service.UserService: debug
 
 
 #常用配置
@@ -34,7 +34,7 @@ logging:
 #      enabled: false #是否对响应进行GZIP压缩
 #logging:
 #  level: #修改日志级别
-#    com.snowman.cloud.service.UserService: debug
+#    com.shen.cloud.service.UserService: debug
 
 
 #在Feign中配置Ribbon可以直接使用Ribbon的配置

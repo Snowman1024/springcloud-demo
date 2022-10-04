@@ -10,7 +10,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.snowman.cloud</groupId>
+	<groupId>com.shen.cloud</groupId>
 	<artifactId>eureka-security-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>eureka-security-server</name>

@@ -6,7 +6,7 @@ spring:
     name: eureka-security-server
   security: #配置SpringSecurity登录用户名和密码
     user:
-      name: snowman
+      name: shen
       password: 123456
 
 eureka:
