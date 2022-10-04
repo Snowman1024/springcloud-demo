@@ -1,0 +1,27 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: config-client
+
+  cloud:
+    config:
+      profile: dev #启用配置后缀名称
+      label: dev #分支名称
+      uri: http://localhost:8905 #配置中心地址
+      name: config #配置文件名称
+      username: shen
+      password: 123456
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+#当Git仓库中的配置信息更改后，可以通过SpringBoot Actuator的refresh端点来刷新客户端配置信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'refresh'
