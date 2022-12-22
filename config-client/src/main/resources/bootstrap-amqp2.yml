@@ -1,8 +1,10 @@
 server:
   port: 9005
+
 spring:
   application:
     name: config-client
+
   cloud:
     config:
       profile: dev #启用环境名称
@@ -11,15 +13,18 @@ spring:
       discovery:
         enabled: true
         service-id: config-server
+
   rabbitmq: #rabbitmq相关配置
     host: localhost
     port: 5672
     username: guest
     password: guest
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8001/eureka/
+
 management:
   endpoints:
     web:
