@@ -6,25 +6,23 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.0</version>
+        <version>2.1.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+
 	<groupId>com.shen.cloud</groupId>
-	<artifactId>nacos-loadbalancer-service</artifactId>
+	<artifactId>nacos-config-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>nacos-loadbalancer-service</name>
+	<name>nacos-config-client</name>
 	<description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
-<!--        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>-->
-<!--		<spring.cloud.alibaba.version>2.1.0.RELEASE</spring.cloud.alibaba.version>-->
-
-        <spring-cloud.version>2021.0.3</spring-cloud.version>
-        <spring.cloud.alibaba.version>2021.0.1.0</spring.cloud.alibaba.version>
-
+        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+		<spring.cloud.alibaba.version>2.1.0.RELEASE</spring.cloud.alibaba.version>
     </properties>
+
 
     <dependencyManagement>
         <dependencies>
@@ -35,6 +33,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -48,22 +47,12 @@
 	<dependencies>
 		<dependency>
             <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
         <dependency>
